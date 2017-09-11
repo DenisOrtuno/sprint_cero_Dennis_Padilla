@@ -1,0 +1,37 @@
+body{
+	margin-top: 5em;
+	background-color: #fafafa;
+	color: #125688;
+	font-family: 'Lato';
+}
+
+input[type="email"]:focus:invalid{
+	border: 1px solid red;
+	box-shadow: 0 0 5px red;
+	/*validar correo*/
+}
+input[type='usuario']:focus:invalid{
+	border: 1px solid red;
+	box-shadow: 0 0 5px red;
+}
+
+#main-container{ /*id de section*/
+	margin: 30px auto;/*margin arriba y abajo y auto para los costados centrados*/
+}
+
+.Registrate{
+	margin-top: auto;
+	text-align: center;
+}
+
+.signup-box{
+	background-color: white;/*color del formulario en blanco*/
+	border: 1px solid #edeeee;/*linea delgada al borde del formulario*/
+	border-radius: 10px; /*borde del formulario redondeado*/
+	padding: 5px 0; /*espaciado respecto a los bordes*/
+}
+
+.signup-form{
+	width: 100%;
+	margin: 0 auto;/*para centrar horizontalmente*/
+}
