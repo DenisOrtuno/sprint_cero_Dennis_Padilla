@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de usuarios</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="registrar.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SISBOL</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="iniciar.html">INICIAR SESION</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+	<div class="text-center">
+		<h1 id="saludar"></h1>
+	</div>
+	<div class="container" id="main-container">
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-10 col-md-4 col-lg-offset-4 col-lg-4">
+				<form class="signup-form" onsubmit="return validar();">
+					<div class="panel signup-box">
+						<div class="form-group">
+							<h3 class="page page-header Registrate text-center">Registrate</h3>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+					     		<span class="glyphicon glyphicon-edit input-group-addon" aria-hidden="true"></span>
+					     		<div class="row">
+					     			<div class="col-lg-6">
+					     				<input type="text" id="nombre" class="form-control" name="nombre" placeholder="Nombre">
+					     			</div>
+									<div class="col-lg-6">
+										<input type="text" id="apellido" class="form-control" name="apellido" placeholder="Apellido">
+									</div>	
+					     		</div>
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							<div class="input-group">
+								<span class="glyphicon glyphicon-envelope input-group-addon"></span>
+								<input type="email" id="correo" class="form-control" name="email" placeholder="email@ejemplo.com">
+							</div>
+							
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+								<span class="glyphicon glyphicon-user input-group-addon"></span>
+								<input type="text" id="usuario" class="form-control" name="usuario" placeholder="Usuario">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+								<span class="glyphicon glyphicon-lock input-group-addon"></span>
+								<input type="password" id="contraseña" class="form-control" name="contraseña" placeholder="Contraseña"> 
+							</div>
+							
+						</div>
+						
+						<div class="form-group">
+							<button class="btn btn-primary btn-block" type="submit">REGISTRAR</button>
+						</div>
+						
+						<div class="form-group navbar-form navbar-left ">
+							Tienes una cuenta? <a href="contact.html">Entrar</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="space-bottom"></div>
+	<div id="footer">
+        <div class="row">
+            
+            <div class="col-md-6">
+                <h4>Necesitas ayuda?</h4>
+                <hr>
+                
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Email address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-3x color-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest-square fa-3x color-pinterest"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center">
+                Copyright©2017 SisBol | Todos los derechos reservados
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
